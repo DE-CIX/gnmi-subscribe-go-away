@@ -50,5 +50,5 @@ async def subscribe():
         # simply print the message to verify that the subscription is working
         print(notification)
 
-
-asyncio.run(subscribe())
+loop = asyncio.get_event_loop()
+loop.run_until_complete(subscribe())
